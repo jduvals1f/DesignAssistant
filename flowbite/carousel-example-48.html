@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel - Example 48 - Flowbite Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">Carousel</h1>
+        <h2 class="text-xl font-semibold mb-6">Example 48</h2>
+        
+        <!-- Component Code -->
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4">Code:</h3>
+            <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>import { Carousel } from 'flowbite';
+import type {
+    CarouselItem,
+    CarouselOptions,
+    CarouselInterface,
+} from 'flowbite';
+import type { InstanceOptions } from 'flowbite';
+
+const carouselElement: HTMLElement = document.getElementById('carousel-example');
+
+const items: CarouselItem[] = [
+    {
+        position: 0,
+        el: document.getElementById('carousel-item-1'),
+    },
+    {
+        position: 1,
+        el: document.getElementById('carousel-item-2'),
+    },
+    {
+        position: 2,
+        el: document.getElementById('carousel-item-3'),
+    },
+    {
+        position: 3,
+        el: document.getElementById('carousel-item-4'),
+    },
+];
+
+// object options with default values
+const options: CarouselOptions = {
+    defaultPosition: 1,
+    interval: 3000,
+
+    indicators: {
+        activeClasses: 'bg-white dark:bg-gray-800',
+        inactiveClasses:
+            'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
+        items: [
+            {
+                position: 0,
+                el: document.getElementById('carousel-indicator-1'),
+            },
+            {
+                position: 1,
+                el: document.getElementById('carousel-indicator-2'),
+            },
+            {
+                position: 2,
+                el: document.getElementById('carousel-indicator-3'),
+            },
+            {
+                position: 3,
+                el: document.getElementById('carousel-indicator-4'),
+            },
+        ],
+    },
+
+    // callback functions
+    onNext: () => {
+        console.log('next slider item is shown');
+    },
+    onPrev: () => {
+        console.log('previous slider item is shown');
+    },
+    onChange: () => {
+        console.log('new slider item has been shown');
+    },
+};
+
+// instance options object
+const instanceOptions: InstanceOptions = {
+  id: 'carousel-example',
+  override: true
+};
+
+const carousel: CarouselInterface = new Carousel(carouselElement, items, options, instanceOptions);
+
+carousel.cycle();
+
+// set event listeners for prev and next buttons
+const $prevButton = document.getElementById('data-carousel-prev');
+const $nextButton = document.getElementById('data-carousel-next');
+
+$prevButton.addEventListener('click', () => {
+    carousel.prev();
+});
+
+$nextButton.addEventListener('click', () => {
+    carousel.next();
+});
+</code></pre>
+        </div>
+        
+        <!-- Component Preview -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border">
+            <h3 class="text-lg font-medium mb-4">Preview:</h3>
+            import { Carousel } from 'flowbite';
+import type {
+    CarouselItem,
+    CarouselOptions,
+    CarouselInterface,
+} from 'flowbite';
+import type { InstanceOptions } from 'flowbite';
+
+const carouselElement: HTMLElement = document.getElementById('carousel-example');
+
+const items: CarouselItem[] = [
+    {
+        position: 0,
+        el: document.getElementById('carousel-item-1'),
+    },
+    {
+        position: 1,
+        el: document.getElementById('carousel-item-2'),
+    },
+    {
+        position: 2,
+        el: document.getElementById('carousel-item-3'),
+    },
+    {
+        position: 3,
+        el: document.getElementById('carousel-item-4'),
+    },
+];
+
+// object options with default values
+const options: CarouselOptions = {
+    defaultPosition: 1,
+    interval: 3000,
+
+    indicators: {
+        activeClasses: 'bg-white dark:bg-gray-800',
+        inactiveClasses:
+            'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
+        items: [
+            {
+                position: 0,
+                el: document.getElementById('carousel-indicator-1'),
+            },
+            {
+                position: 1,
+                el: document.getElementById('carousel-indicator-2'),
+            },
+            {
+                position: 2,
+                el: document.getElementById('carousel-indicator-3'),
+            },
+            {
+                position: 3,
+                el: document.getElementById('carousel-indicator-4'),
+            },
+        ],
+    },
+
+    // callback functions
+    onNext: () => {
+        console.log('next slider item is shown');
+    },
+    onPrev: () => {
+        console.log('previous slider item is shown');
+    },
+    onChange: () => {
+        console.log('new slider item has been shown');
+    },
+};
+
+// instance options object
+const instanceOptions: InstanceOptions = {
+  id: 'carousel-example',
+  override: true
+};
+
+const carousel: CarouselInterface = new Carousel(carouselElement, items, options, instanceOptions);
+
+carousel.cycle();
+
+// set event listeners for prev and next buttons
+const $prevButton = document.getElementById('data-carousel-prev');
+const $nextButton = document.getElementById('data-carousel-next');
+
+$prevButton.addEventListener('click', () => {
+    carousel.prev();
+});
+
+$nextButton.addEventListener('click', () => {
+    carousel.next();
+});
+
+        </div>
+    </div>
+</body>
+</html>

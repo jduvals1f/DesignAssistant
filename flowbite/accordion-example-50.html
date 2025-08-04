@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion - Example 50 - Flowbite Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">Accordion</h1>
+        <h2 class="text-xl font-semibold mb-6">Example 50</h2>
+        
+        <!-- Component Code -->
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4">Code:</h3>
+            <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>const accordionElement = document.getElementById('accordion-example');
+
+// create an array of objects with the id, trigger element (eg. button), and the content element
+const accordionItems = [
+    {
+        id: 'accordion-example-heading-1',
+        triggerEl: document.querySelector('#accordion-example-heading-1'),
+        targetEl: document.querySelector('#accordion-example-body-1'),
+        active: true
+    },
+    {
+        id: 'accordion-example-heading-2',
+        triggerEl: document.querySelector('#accordion-example-heading-2'),
+        targetEl: document.querySelector('#accordion-example-body-2'),
+        active: false
+    },
+    {
+        id: 'accordion-example-heading-3',
+        triggerEl: document.querySelector('#accordion-example-heading-3'),
+        targetEl: document.querySelector('#accordion-example-body-3'),
+        active: false
+    }
+];
+
+// options with default values
+const options = {
+    alwaysOpen: true,
+    activeClasses: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
+    inactiveClasses: 'text-gray-500 dark:text-gray-400',
+    onOpen: (item) => {
+        console.log('accordion item has been shown');
+        console.log(item);
+    },
+    onClose: (item) => {
+        console.log('accordion item has been hidden');
+        console.log(item);
+    },
+    onToggle: (item) => {
+        console.log('accordion item has been toggled');
+        console.log(item);
+    },
+};
+
+// instance options object
+const instanceOptions = {
+    id: 'accordion-example',
+    override: true
+};
+</code></pre>
+        </div>
+        
+        <!-- Component Preview -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border">
+            <h3 class="text-lg font-medium mb-4">Preview:</h3>
+            const accordionElement = document.getElementById('accordion-example');
+
+// create an array of objects with the id, trigger element (eg. button), and the content element
+const accordionItems = [
+    {
+        id: 'accordion-example-heading-1',
+        triggerEl: document.querySelector('#accordion-example-heading-1'),
+        targetEl: document.querySelector('#accordion-example-body-1'),
+        active: true
+    },
+    {
+        id: 'accordion-example-heading-2',
+        triggerEl: document.querySelector('#accordion-example-heading-2'),
+        targetEl: document.querySelector('#accordion-example-body-2'),
+        active: false
+    },
+    {
+        id: 'accordion-example-heading-3',
+        triggerEl: document.querySelector('#accordion-example-heading-3'),
+        targetEl: document.querySelector('#accordion-example-body-3'),
+        active: false
+    }
+];
+
+// options with default values
+const options = {
+    alwaysOpen: true,
+    activeClasses: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
+    inactiveClasses: 'text-gray-500 dark:text-gray-400',
+    onOpen: (item) => {
+        console.log('accordion item has been shown');
+        console.log(item);
+    },
+    onClose: (item) => {
+        console.log('accordion item has been hidden');
+        console.log(item);
+    },
+    onToggle: (item) => {
+        console.log('accordion item has been toggled');
+        console.log(item);
+    },
+};
+
+// instance options object
+const instanceOptions = {
+    id: 'accordion-example',
+    override: true
+};
+
+        </div>
+    </div>
+</body>
+</html>

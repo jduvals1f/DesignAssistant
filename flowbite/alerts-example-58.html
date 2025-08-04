@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - Example 58 - Flowbite Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">Alerts</h1>
+        <h2 class="text-xl font-semibold mb-6">Example 58</h2>
+        
+        <!-- Component Code -->
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4">Code:</h3>
+            <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>// target element that will be dismissed
+const $targetEl = document.getElementById('targetElement');
+
+// optional trigger element
+const $triggerEl = document.getElementById('triggerElement');
+
+// options object
+const options = {
+  transition: 'transition-opacity',
+  duration: 1000,
+  timing: 'ease-out',
+
+  // callback functions
+  onHide: (context, targetEl) => {
+    console.log('element has been dismissed')
+    console.log(targetEl)
+  }
+};
+
+// instance options object
+const instanceOptions = {
+  id: 'targetElement',
+  override: true
+};
+</code></pre>
+        </div>
+        
+        <!-- Component Preview -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border">
+            <h3 class="text-lg font-medium mb-4">Preview:</h3>
+            // target element that will be dismissed
+const $targetEl = document.getElementById('targetElement');
+
+// optional trigger element
+const $triggerEl = document.getElementById('triggerElement');
+
+// options object
+const options = {
+  transition: 'transition-opacity',
+  duration: 1000,
+  timing: 'ease-out',
+
+  // callback functions
+  onHide: (context, targetEl) => {
+    console.log('element has been dismissed')
+    console.log(targetEl)
+  }
+};
+
+// instance options object
+const instanceOptions = {
+  id: 'targetElement',
+  override: true
+};
+
+        </div>
+    </div>
+</body>
+</html>

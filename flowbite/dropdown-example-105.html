@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown - Example 105 - Flowbite Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">Dropdown</h1>
+        <h2 class="text-xl font-semibold mb-6">Example 105</h2>
+        
+        <!-- Component Code -->
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4">Code:</h3>
+            <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code>
+    
+      
+      
+        
+          
+            
+           Edit on GitHub
+        
+      
+      
+      
+        Toggle full view
+          
+        
+        
+          
+              Toggle full screen
+              
+          
+        
+        Toggle tablet view
+          
+        
+        
+          
+              Toggle tablet view
+              
+          
+        
+        Toggle mobile view
+          
+        
+        
+        
+            Toggle mobile view
+            
+        
+      
+      
+        
+        
+          RTL
+         
+        
+            Toggle RTL mode
+            
+        
+            
+              
+            
+            
+              
+            
+            Toggle dark/light mode
+          
+          
+          
+              Toggle dark mode
+              
+          
+          
+    
+  
+
+  
+    
+      
+        
+        
+          
+            
+                
+                
+            
+            Loading...
+        
+      
+      
+    
+  
+        
+            
+              
+                
+                  HTML
+                
+                
+              
+              
+                
+                  
+                    
+                    
+                   Copy
+                
+                
+                  
+                      Copy to clipboard
+                      
+                  
+                
+                
+Project users 
+
+
+
+
+
+
+  
+    
+      
+        
+        Jese Leos
+      
+    
+    
+      
+        
+        Robert Gough
+      
+    
+    
+      
+        
+        Bonnie Green
+      
+    
+    
+      
+        
+        Leslie Livingston
+      
+    
+    
+      
+        
+        Michael Gough
+      
+    
+    
+      
+        
+        Joseph Mcfall
+      
+    
+          
+      
+        
+        Roberta Casas
+      
+    
+    
+      
+        
+        Neil Sims
+      
+    
+  
+  
+      
+        
+      
+      Add new user
+  
+
+
+              
+            
+          
+            
+              <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Project users <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg>
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdownUsers" class="z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700">
+  <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
+        Jese Leos
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Jese image">
+        Robert Gough
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image">
+        Bonnie Green
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Jese image">
+        Leslie Livingston
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Jese image">
+        Michael Gough
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Jese image">
+        Joseph Mcfall
+      </a>
+    </li>
+          <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image">
+        Roberta Casas
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
+        Neil Sims
+      </a>
+    </li>
+  </ul>
+  <a href="#" class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+      <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+        <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
+      </svg>
+      Add new user
+  </a>
+</div>
+              
+            
+            Expand code
+          
+        
+      </code></pre>
+        </div>
+        
+        <!-- Component Preview -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border">
+            <h3 class="text-lg font-medium mb-4">Preview:</h3>
+            
+    
+      
+      
+        
+          
+            
+           Edit on GitHub
+        
+      
+      
+      
+        Toggle full view
+          
+        
+        
+          
+              Toggle full screen
+              
+          
+        
+        Toggle tablet view
+          
+        
+        
+          
+              Toggle tablet view
+              
+          
+        
+        Toggle mobile view
+          
+        
+        
+        
+            Toggle mobile view
+            
+        
+      
+      
+        
+        
+          RTL
+         
+        
+            Toggle RTL mode
+            
+        
+            
+              
+            
+            
+              
+            
+            Toggle dark/light mode
+          
+          
+          
+              Toggle dark mode
+              
+          
+          
+    
+  
+
+  
+    
+      
+        
+        
+          
+            
+                
+                
+            
+            Loading...
+        
+      
+      
+    
+  
+        
+            
+              
+                
+                  HTML
+                
+                
+              
+              
+                
+                  
+                    
+                    
+                   Copy
+                
+                
+                  
+                      Copy to clipboard
+                      
+                  
+                
+                
+Project users 
+
+
+
+
+
+
+  
+    
+      
+        
+        Jese Leos
+      
+    
+    
+      
+        
+        Robert Gough
+      
+    
+    
+      
+        
+        Bonnie Green
+      
+    
+    
+      
+        
+        Leslie Livingston
+      
+    
+    
+      
+        
+        Michael Gough
+      
+    
+    
+      
+        
+        Joseph Mcfall
+      
+    
+          
+      
+        
+        Roberta Casas
+      
+    
+    
+      
+        
+        Neil Sims
+      
+    
+  
+  
+      
+        
+      
+      Add new user
+  
+
+
+              
+            
+          
+            
+              <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Project users <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg>
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdownUsers" class="z-10 hidden bg-white rounded-lg shadow-sm w-60 dark:bg-gray-700">
+  <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
+        Jese Leos
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Jese image">
+        Robert Gough
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image">
+        Bonnie Green
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Jese image">
+        Leslie Livingston
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Jese image">
+        Michael Gough
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Jese image">
+        Joseph Mcfall
+      </a>
+    </li>
+          <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image">
+        Roberta Casas
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        <img class="w-6 h-6 me-2 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
+        Neil Sims
+      </a>
+    </li>
+  </ul>
+  <a href="#" class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+      <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+        <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
+      </svg>
+      Add new user
+  </a>
+</div>
+              
+            
+            Expand code
+          
+        
+      
+        </div>
+    </div>
+</body>
+</html>
